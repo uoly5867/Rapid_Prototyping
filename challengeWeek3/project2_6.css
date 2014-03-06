@@ -1,0 +1,4 @@
+.animate1({height:'300px',opacity:'0.4'},"slow");
+.animate2({width:'300px',opacity:'0.8'},"slow");
+.animate3({height:'100px',opacity:'0.4'},"slow");
+.animate4({width:'100px',opacity:'0.8'},"slow");

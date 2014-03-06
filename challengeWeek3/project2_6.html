@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="grid.css" rel="stylesheet">
+    <link href="project2_6.css" rel="stylesheet">
+    
+    <script>
+      $(document).ready(function(){
+      $("#profilepic").mouseover(function(){
+      var div=$("#profilepic");
+      div.animate({height:'300px',opacity:'0.4'},"slow");
+      div.animate({width:'300px',opacity:'0.8'},"slow");
+      div.animate({height:'100px',opacity:'0.4'},"slow");
+      div.animate({width:'100px',opacity:'0.8'},"slow");
+      });
+
+      $("#h1").click(function(){
+      $("#h1").css("color","red")
+      .slideUp(2000)
+      .slideDown(2000);
+      });
+
+      $("#profilepic").mouseover(function(){
+      $("#profilepic").stop();
+      });
+
+      $("#h1").click(function(){
+      $("#h1").stop();
+      });
+      
+      });
+    </script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse" role="navigation">	
+	<a class="navbar-brand" href="#" id="name">Uonsong Ly</a>
+	<button type="button" class="btn btn-default navbar-btn">About Me</button>
+	<button type="button" class="btn btn-default navbar-btn">Contact</button>	
+	<img src="http://www.fundchat.org/wp-content/uploads/2013/11/Linkedin-Logo.png" id="linkedin" alt="Smiley face" height="40" width="40" class="navbar-right">
+
+    </nav>
+
+    
+    
+    <div class="row">
+      <div class="col-md-8 col-md-offset-1">
+	<h1 id="h1">
+	  <font color="#0066CC">Welcome!</font>
+	</h1>
+	<p>My name is Uonsong Ly. I am a student at the University of
+	  Colorado at Boulder. I am now a senior. I am studying Electrical
+	  and Computer Engineering and minor in Computer Science. 
+	  I am originally from Cambodia. I am hoping to land a career with
+	  Embedded System after I graduate. Technology is my passion to 
+	  continue my education and career in Engineering. The classes
+	  that I am currently taking right now are Capstone Senior Project,
+	  Controls System Laboratory, Algorithm, Software Engineering Methods
+	  and Tools, and Rapid Prototyping. I have experience with C, C++,
+	  Java, Python, HTML/CSS/Jqueary/Bootstrap. 
+	</p>
+      </div>
+      
+      <div class="col-md-2">
+	<img src="https://lh4.googleusercontent.com/-2KhToaJfvGA/AAAAAAAAAAI/AAAAAAAAAAA/pixVgKMlMZw/photo.jpg" id="profilepic" alt="Smiley face" height="180" width="180" class="navbar-right">
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1">
+	<h2>
+	  <font color="#0066CC">Resume Details</font>
+	</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1">
+	<h3>Education</h3>
+	<p>University of Colorado Boulder</p>
+	<img src="https://aod.colorado.edu/sites/default/files/campusphoto.jpg" alt="Smiley face" height="150" width="150" class="navbar-right">
+      </div>
+      <div class="col-md-2">
+	<h3>Projects</h3>
+	<ul>
+	  <li>Head Collision Simulation System</li>
+	  <li>The Pacman Project</li>
+	  <li>Wireless Robot Control</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	</ul>
+      </div>
+      <div class="col-md-2">
+	<h3>Experiences</h3>
+	<ul>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	</ul>
+      </div>
+      <div class="col-md-2">
+	<h3>Skils</h3>
+	<ul>
+	  <li>C/C++</li>
+	  <li>Java</li>
+	  <li>HTML/CSS</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	  <li>..............</li>
+	</ul>
+      </div>
+    </div>
+    
+    
+
+   
+  </body>
+</html>
