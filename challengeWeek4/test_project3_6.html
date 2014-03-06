@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="doc/assets/ico/favicon.ico">
+
+    <title>Project 3 of 6</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+  $(document).ready(function() {
+
+$(document.documentElement).keyup(function (event) {
+var direction = null;
+
+// handle cursor keys
+if (event.keyCode == 37) {
+  // go left
+
+  direction = 'prev';
+} else if (event.keyCode == 39) {
+  // go right
+  direction = 'next';
+}
+
+if (direction != null) {
+$(function(){
+    var list = $('.coda-slider-wrapper ul');
+    list.find('a').click(function(e){
+        list.find('a').removeAttr('id');
+        this.id = 'current';
+    });
+});
+}
+
+});
+});
+
+  </script>
+
+
+
+
+  </head>
+
+  <body>
+    <div id="header" class="coda-slider-wrapper">
+    <h1 id="logo">Scrolling Clouds</h1>
+    <ul id="menu">
+      <li><a href="#box1" class="link" id="current">Home</a></li>
+        <li><a href="#box2" class="link">Box 2</a></li>
+        <li><a href="#box3" class="link">Box 3</a></li>
+        <li><a href="#box4" class="link">Box 4</a></li>
+  </ul>
+</div>
+
+
+  </body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="doc/assets/ico/favicon.ico">
+
+    <title>Project 3 of 6</title>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+       $(function(){
+    var list = $('.nav nav-pills ul');
+    list.find('a').click(function(e){
+        list.find('a').removeAttr('id');
+        this.id = 'current';
+    });
+});
+
+       $(document).ready(function() {
+        $(document).keydown(function(event) {
+          var dir = null;
+          if(event.keyCode==37) {
+            <!-- alert("left"); -->
+            dir = 'prev';
+          }
+          if(event.keyCode==39) {
+            <!-- alert("right"); -->
+            dir = 'next';
+          }
+
+          if (direction != null) {
+            $('.nav nav-pills ul a.current').parent()[direction]().find('a').click();
+          }
+           
+          
+
+
+
+        });
+
+        
+
+      });
+    </script>
+
+  </head>
+
+  <body>
+    
+    
+    <ul class="nav nav-pills">
+      <li><a href="#1" class="active" id="current">Home</a></li>
+      <li><a href="#2">Profile</a></li>
+      <li><a href="#3">Messages</a></li>
+      <li><a href="#4">Contact</a></li>
+    </ul>
+    
+  </body>
+
+</html>
