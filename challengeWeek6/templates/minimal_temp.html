@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>My Webpage</title>
+    <link href="{{ url_for('static', filename="css/bootstrap.min.css") }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename="css/bootstrap-responsive.min.css") }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename="js/bootstrap.js") }}" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+    	<div class="row" id="links">
+    		<div class="col-md-4">
+    			<div align="center">
+        			<a > <span class="glyphicon glyphicon-fire"></span></a><a style="font-size:20px" href="{{ navigation[0].href }}">{{ navigation[0].caption }}</a><a><span class="glyphicon glyphicon-fire"></span></a>
+        		</div>
+   	 		</div>
+   	 		<div class="col-md-4">
+   	 			<div align="center">
+   	 				<a> <span class="glyphicon glyphicon-fire"></span></a><a style="font-size:20px" href="{{ navigation[1].href }}">{{ navigation[1].caption }}</a><a><span class="glyphicon glyphicon-fire"></span></a>
+   	 			</div>
+   	 		</div>
+   	 		<div class="col-md-4">
+   	 			<div align="center">
+   	 				<a> <span class="glyphicon glyphicon-fire"></span></a><a style="font-size:20px" href="{{ navigation[2].href }}">{{ navigation[2].caption }}</a><a><span class="glyphicon glyphicon-fire"></span></a>
+   	 			</div>
+   	 		</div>
+   	 	</div>
+   	 </div>
+
+
+   	<div align="center">
+    	<h1><span class="glyphicon glyphicon-glass"></span>My Webpage<span class="glyphicon glyphicon-glass"></span></h1>
+    	{{ a_variable }}
+    </div>
+</body>
+</html>
